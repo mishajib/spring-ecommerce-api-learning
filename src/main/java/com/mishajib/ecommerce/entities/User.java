@@ -32,6 +32,7 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     @Builder.Default
+    @ToString.Exclude
     private List<Address> addresses = new ArrayList<>();
 
     public void addAddress(Address address) {
