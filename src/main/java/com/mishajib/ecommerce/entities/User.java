@@ -43,7 +43,4 @@ public class User {
         addresses.remove(address);
         address.setUser(null);
     }
-
-    @OneToOne(mappedBy = "user")
-    private Profile profile;
 }
